@@ -1,18 +1,17 @@
 html {
   background-color: #eeeeec;
   font-family: "Garamond", serif;
-  line-height: 1.5rem;
 }
 
 body {
   padding: 10%;
   padding-bottom: 0.0rem;
   padding-top: 0.5rem;
+  font-size: 1.10rem;
 }
 
 ul, p {
   color: #2e3436;
-  font-size: 1.10rem;
 }
 
 h1 {
@@ -39,4 +38,10 @@ nav {
   color: #555753;
   padding: 1px;
   border: 1px dashed black;
+}
+
+footer {
+  background-color: #D3D7CF;
+  padding: 0.25rem;
+  font-size: 0.85rem;
 }
