@@ -1,24 +1,40 @@
 html {
   background-color: #eeeeec;
   font-family: "Garamond", serif;
+  line-height: 1.5rem;
+}
+
+body {
+  padding: 10%;
+  padding-bottom: 0.0rem;
+  padding-top: 0.5rem;
 }
 
 p {
   color: #2e3436;
+  font-size: 1.10rem;
 }
 
 h1 {
   color: #651029;
+  font-size: 2.55rem;
 }
 
 h2 {
-  color: #89203F;
+  color: #A93357;
+  font-size: 1.80rem;
 }
 
 h3 {
-  color: #9E2E50;
+  color: #CE5B7E;
+  font-size: 1.25rem;
 }
 
+nav {
+  font-size: 1.50rem;
+  padding: 1.50rem;
+  background-color: #D3D7CF;
+}
 .navcurrent {
   color: #555753;
   padding: 1px;
@@ -27,3 +43,4 @@ h3 {
 .navout {
   color: #204a87;
 }
+
