@@ -7,7 +7,7 @@ title: Resume - Logan Hood
 
 I'm at my best as a hands-on-keyboard technical leader and teacher, working in and across an organization to
 drive engineering excellence. To me, effective engineering leadership comes down to helping software teams
-*do the right things, at the right time, in the right way*.
+do the right things, at the right time, in the right way.
 
 ## Professional Experience
 
