@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Everyday peer-to-peer sharing with 7-Zip and BitTorrent"
+imgpath: "/assets/img/posts/everyday-7zip-bittorrent"
 ---
 
 #### > Can you email those photos to me?
@@ -74,14 +75,14 @@ Put all the files you want to share into the same folder.
 If you've installed 7Zip, you should be able to right-click on the folder and have an
 option to compress as a 7z file. Here's what this looks like in Mint Linux, for example:
 
-![Right click on PinkWojaks folder, mouse-over the Compress option](/assets/img/posts/file-sharing-with-torrents-no-really/right-click-compress.png)
+![Right click on PinkWojaks folder, mouse-over the Compress option]({{ page.imgpath }}/right-click-compress.png)
 
 Make sure that you choose **7z** as the file format, and that you use a strong password.
 You need to keep the password somewhere, because you'll have to share this later.
 Optionally, you can change the filename (like I've done here) if you want to hide the
 original folder name.
 
-![Dialog to compress the directory. Filename: burly-duckbill-aviation, Password: "GMsDvFPibiwCRpnTxTgKyRi", check "Encrypt the file list too"](/assets/img/posts/file-sharing-with-torrents-no-really/compress-dialog.png)
+![Dialog to compress the directory. Filename: burly-duckbill-aviation, Password: "GMsDvFPibiwCRpnTxTgKyRi", check "Encrypt the file list too"]({{ page.imgpath }}/compress-dialog.png)
 
 ### (2) Create a .torrent file
 
@@ -90,7 +91,7 @@ qBittorrent includes a torrent creator wizard, under Tools -> Torrent Creator.
 Choose your 7z file, "Start seeding immediately", and
 add a tracker URL. In this case I'm using `udp://tracker.opentrackr.org:1337/announce`.
 
-![qBittorrent user interface, with the 7z file selected as the file path, 'start seeding immediately' checked, private torrent NOT checked, and tracker URLs populated with a tracker announcement URL.](/assets/img/posts/file-sharing-with-torrents-no-really/create-torrent-dialog.png)
+![qBittorrent user interface, with the 7z file selected as the file path, 'start seeding immediately' checked, private torrent NOT checked, and tracker URLs populated with a tracker announcement URL.]({{ page.imgpath }}/create-torrent-dialog.png)
 
 #### Security note 1!
 
