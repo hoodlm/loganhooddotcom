@@ -1,6 +1,6 @@
 html {
   background-color: #eeeeec;
-  font-family: "Garamond", serif;
+  font-family: "Times New Roman", serif;
 }
 
 img {
@@ -12,7 +12,7 @@ body {
   padding: 4%;
   padding-bottom: 0.0rem;
   padding-top: 0.5rem;
-  font-size: 1.10rem;
+  font-size: 1.20rem;
 }
 
 ol, ul, li, p {
@@ -26,16 +26,16 @@ h1 {
 
 h2 {
   color: #A93357;
-  font-size: 1.80rem;
+  font-size: 1.90rem;
 }
 
 h3 {
   color: #CE5B7E;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
 }
 
 nav {
-  font-size: 1.50rem;
+  font-size: 1.75rem;
   padding: 1.50rem;
   background-color: #D3D7CF;
 }
@@ -49,4 +49,12 @@ footer {
   background-color: #D3D7CF;
   padding: 0.25rem;
   font-size: 0.85rem;
+}
+
+.serious-security-business {
+  font-family: mono;
+  background-color: #babdb6;
+  color: #2e3436;
+  padding: 0.25rem;
+  border: 1px solid black;
 }
