@@ -1,10 +1,12 @@
+@use 'sass:color';
+
 $clr_bkgd: #eeeeec;
 $clr_bkgd_box: #D3D7CF;
 $clr_text: #2e3436;
 
 $clr_h1: #651029;
-$clr_h2: #A93357;
-$clr_h3: #CE5B7E;
+$clr_h2: color.scale($clr_h1, $lightness: 20%);
+$clr_h3: color.scale($clr_h1, $lightness: 40%);
 
 $clr_lightborder: #babdb6;
 $clr_darkborder: black;
