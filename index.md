@@ -9,11 +9,10 @@ Software engineer, hands-on-keyboard technical leader. I have extensive experien
 
 I blog about technology and non-technology topics!
 
-### Recent posts
+### Recent posts:
 
 {% for post in site.posts %}
-* **{{ post.date | date: "%Y-%m-%d" }}**: [{{ post.title }}]({{ post.url }})
-{% endfor %}
+* **{{ post.date | date: "%Y-%m-%d" }}**: [{{ post.title }}]({{ post.url }}){% endfor %}
 
 ## Links
 
