@@ -1,11 +1,22 @@
+$clr_bkgd: #eeeeec;
+$clr_bkgd_box: #D3D7CF;
+$clr_text: #2e3436;
+
+$clr_h1: #651029;
+$clr_h2: #A93357;
+$clr_h3: #CE5B7E;
+
+$clr_lightborder: #babdb6;
+$clr_darkborder: black;
+
 html {
-  background-color: #eeeeec;
+  background-color: $clr_bkgd;
   font-family: "Times New Roman", serif;
 }
 
 img {
   padding: 0.5rem;
-  border: 0.125rem solid #babdb6;
+  border: 0.125rem solid $clr_lightborder;
 }
 
 body {
@@ -16,45 +27,45 @@ body {
 }
 
 ol, ul, li, p {
-  color: #2e3436;
+  color: $clr_text;
 }
 
 h1 {
-  color: #651029;
+  color: $clr_h1;
   font-size: 2.55rem;
 }
 
 h2 {
-  color: #A93357;
+  color: $clr_h2;
   font-size: 1.90rem;
 }
 
 h3 {
-  color: #CE5B7E;
+  color: $clr_h3;
   font-size: 1.35rem;
 }
 
 nav {
   font-size: 1.75rem;
   padding: 1.50rem;
-  background-color: #D3D7CF;
+  background-color: $clr_bkgd_box;
 }
 .navcurrent {
   color: #555753;
   padding: 1px;
-  border: 1px dashed black;
+  border: 1px dashed $clr_darkborder;
 }
 
 footer {
-  background-color: #D3D7CF;
+  background-color: $clr_bkgd_box;
   padding: 0.25rem;
   font-size: 0.85rem;
 }
 
 .serious-security-business {
   font-family: mono;
-  background-color: #babdb6;
+  background-color: $clr_bkgd_box;
   color: #2e3436;
   padding: 0.25rem;
-  border: 1px solid black;
+  border: 1px solid $clr_darkborder;
 }
