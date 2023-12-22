@@ -1,8 +1,11 @@
 @use 'sass:color';
 
 $clr_bkgd: #eeeeec;
+$clr_bkgd_code: color.scale($clr_bkgd, $lightness: -15%);
 $clr_bkgd_box: #D3D7CF;
+
 $clr_text: #2e3436;
+$clr_code_text: #000000;
 
 $clr_h1: #0F2E7B;
 $clr_h2: color.scale($clr_h1, $lightness: 20%);
@@ -27,6 +30,18 @@ body {
   padding-bottom: 0.0rem;
   padding-top: 0.5rem;
   font-size: 1.20rem;
+}
+
+code {
+  font-family: "Courier New", mono;
+  font-size: 1.00rem;
+  background-color: $clr_bkgd_code;
+  color: $clr_code_text;
+}
+
+.highlight {
+  background-color: $clr_bkgd_code;
+  color: $clr_code_text;
 }
 
 ol, ul, li, p {
@@ -64,7 +79,7 @@ footer {
 }
 
 .serious-security-business {
-  font-family: mono;
+  font-family: "Courier New", mono;
   background-color: $clr_bkgd_box;
   color: #2e3436;
   padding: 0.25rem;
