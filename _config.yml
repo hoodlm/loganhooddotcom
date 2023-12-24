@@ -1,2 +1,13 @@
 exclude:
 - README.md
+
+title: "Logan Hood"
+description: "Personal website and technology blog"
+url: "https://www.loganhood.com"
+author: "Logan Hood"
+
+feed:
+  posts_limit: 100
+
+plugins:
+  - jekyll-feed

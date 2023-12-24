@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Everyday peer-to-peer sharing with 7-Zip and BitTorrent"
+excerpt: "You can use BitTorrent as a self-hosted means to share files like photos and videos, with decent privacy, and it's simple enough to use with moderately tech-savvy friends and family."
 imgpath: "/assets/img/posts/everyday-7zip-bittorrent"
 ---
 
