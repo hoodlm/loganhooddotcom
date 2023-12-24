@@ -9,14 +9,12 @@ with `git merge --allow-unrelated-histories`.
 
 ## Taking stock of the Junk...
 
-I have a lot of dubiously-useful side projects and experiments that I've hoarded
-over the years. Some of these I've uploaded to Github, if nothing else because I see a potentially useful reference
-for my future self or for someone else out there.
-
-So I accumulated a bunch of little junk repos, with no common theme to speak of:
+As a side effect of years of learning - new languages and frameworks, and new ideas - 
+I've accumulated many dubiously-useful side projects and experiments.
+Some of these I've uploaded to Github as standalone repos, such as:
 
 * an abstract art engine (generative and artificial, but unintelligent) in Ruby
-* a poorly-written math expression parser (the parser is poorly-written, not necessarily the math expressions) in Rust
+* a poorly-written math expression parser in Rust
 * a static HTML page showing the tango color palette
 
 Proliferation of junk repos isn't *really* a problem. Github's free tier doesn't place any limit on the number of
@@ -26,42 +24,48 @@ consolidate these tiny projects into one place.
 ### The junk drawer analogy
 
 The junk drawer is a practical organizational technique: an escape-hatch when something doesn't fit
-in a neat category. When you are trying to organize
+into a specific category. When you are trying to organize
 your desk or toolbox or kitchen, you can define some clear categories:
 silverware, knives, cooking utensils, baking, and so on. Every item
 belongs to one and only one category, and so it is placed in the corresponding drawer.
 
 But there's an inevitable remnant: toothpicks, meat thermometer, paper
-and pen, and so on. Their utility warrants presence in a kitchen drawer, but they don't fit neatly into the
-Pure Kitchen Hierarchy you planned. But you can still give them a category: they belong in the Junk Drawer.
+and pen, and so on. Perhaps their utility warrants a position in some kitchen drawer, but they don't fit neatly into the
+Pure Kitchen Hierarchy you planned. But, you can still give them a category: they belong in the Junk Drawer.
 
 ## Founding the JunkDrawer
 
+I want to put all these individual repos into a **monorepo**. I'm calling it JunkDrawer:
+
 ```
-mkdir $HOME/JunkDrawer && cd $HOME/JunkDrawer
-git init
+$ mkdir $HOME/JunkDrawer && cd $HOME/JunkDrawer
+$ git init
 ```
 
 Now, I could just copy all my other projects directly...
 
 ```
-cp -r $HOME/Code/* .
+$ cp -r $HOME/Code/* .
 ```
 
-...but I'd lose the history of commits in each project if I do that.
-This whole exercise is about hoarding dubiously-useful code, so I'd like to also
-preserve the dubiously-useful history that goes with it!
+...but I'd lose the git history in each project if I do that.
+This whole exercise is about hoarding dubiously-useful code - so why not
+also preserve the dubiously-useful history that goes with it?
 
 ## Combining histories
 
 Git-merge is documented as a command to "join two or more
 development histories together". In this context, a "history" is synonymous with a
 branch. The most common day-to-day usage for git-merge is to join
-two local branches together; for example, to fit the commits from a feature branch
+two local branches together; for example, to join newer commits from a feature branch
 into a main branch.
 
-The git-merge documentation has ASCII diagrams to illustrate
-merging a branch 'Topic' into 'Main'.
+As another day-to-day example, Git-pull is actually a compound operation combining a Git-fetch (to retrieve data
+from a remote branch) and a Git-merge (to join the changes in that remote branch with the
+local branch).
+
+The Git-merge documentation has ASCII diagrams to illustrate
+a typical merge operation, joining a branch 'Topic' into another branch 'Main'.
 
 ```
        A---B---C Topic
@@ -69,8 +73,8 @@ merging a branch 'Topic' into 'Main'.
  D---E---F---G---H Main
 ```
 
-Topic and Main, above, have a common point in history - they diverged at
-commit E, and have been merged back together at commit H.
+Topic and Main, above, have a common point in history - they originally diverged at
+commit E. Commit E can also be described as a "common ancestor" of the two branches.
 
 What I'm trying to accomplish is a different picture.
 
@@ -82,7 +86,7 @@ E---F---G---H---I Project-1
     V---W---X---Y---Z Project-2
 ```
 
-Project-1 and Project-2 don't have any commit in common. In git parlance,
+Project-1 and Project-2 don't have any common ancestor commit. In git parlance,
 this means they are "unrelated histories". In particular, they are also
 unrelated histories with respect to Junk-Drawer, which I'm trying to merge
 them into.
@@ -105,12 +109,12 @@ From https://github.com/hoodlm/mexprander
  * [new branch]      main       -> github/mexprander/main
 
 $ git merge github/mexprander/main
-fatal: refusing to merge unrelated histories
+**fatal: refusing to merge unrelated histories**
 ```
 
 ## Combining *unrelated* histories
 
-There's a flag for that!
+There's a flag for that.
 
 > \-\-allow-unrelated-histories
 
@@ -118,7 +122,7 @@ There's a flag for that!
 override this safety when merging histories of two projects that started their lives independently. As that is a very rare
 occasion, no configuration variable to enable this by default exists and will not be added.
 
-I am, in fact, experiencing the very rare occasion alluded to by the documentation! So, let's try it out:
+I have, in fact, stumbled on the very rare occasion alluded to by the documentation! So, let's try it out:
 
 ```
 $ git merge --allow-unrelated-histories -- github/mexprander/main
@@ -127,7 +131,7 @@ $ ls
 Cargo.toml  README.md  src
 ```
 
-So far so good! Let's try a second repo:
+So far so good! Let's try a second repo, another Rust project:
 
 ```
 $ git remote add github/logan-rosalind-rust https://github.com/hoodlm/logan-rosalind-rust.git
@@ -135,18 +139,18 @@ $ git remote add github/logan-rosalind-rust https://github.com/hoodlm/logan-rosa
 $ git fetch
 ...
 $ git merge --allow-unrelated-histories -- github/logan-rosalind-rust
-logan@logan-mint-hp ~/C/FakeJunkDrawer (main)> git merge --allow-unrelated-histories -- rosalind
+
 Auto-merging .gitignore
 CONFLICT (add/add): Merge conflict in .gitignore
 Auto-merging Cargo.toml
 CONFLICT (add/add): Merge conflict in Cargo.toml
 Auto-merging README.md
 CONFLICT (add/add): Merge conflict in README.md
-Automatic merge failed; fix conflicts and then commit the result.
+**Automatic merge failed; fix conflicts and then commit the result.**
 ```
 
-Well, that didn't go so well. I'm trying to merge two Rust projects together. Right off the bat,
-I have identical filepaths for README, .gitignore, and Cargo.toml. This blind-merge also crams
+Well, that didn't go so well. Right off the bat,
+I have identical filepaths for README, .gitignore, and Cargo.toml. This blind merge also crams
 all the files in the `src` directory together, which is not what I want either.
 
 ### Preparing sub-projects for merging: directory restructuring
@@ -176,7 +180,16 @@ $ mv .gitignore $PROJECT/
 Finally, I would do a quick test of the project at this point (for example, `cargo clean && cargo test`) to make sure that nothing
 got broken or lost in the move.
 
-Then I made a git-commit (locally, not pushed yet) with the move: [see example](https://github.com/hoodlm/JunkDrawer/commit/8f9c651afb18b46c522f7a29ecf4f8a48446bebc).
+Then I made a git-commit (locally, not pushed yet) with the move. This is what this commit looks like:
+
+```
+$ git diff --compact-summary 1e2f91f7^ 1e2f91f7
+   .gitignore => rust/mexprander/.gitignore | 0
+   Cargo.toml => rust/mexprander/Cargo.toml | 0
+   README.md => rust/mexprander/README.md   | 0
+   {src => rust/mexprander/src}/lib.rs      | 0
+   4 files changed, 0 insertions(+), 0 deletions(-)
+```
 
 ### Optional: annotate commit messages
 
