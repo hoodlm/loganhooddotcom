@@ -5,9 +5,7 @@ title: Logan Hood
 
 # Logan Hood
 
-Software engineer, hands-on-keyboard technical leader. I have extensive experience with large-scale distributed backend systems: design, implementation, and operations.
-
-I blog about technology and non-technology topics!
+Software engineer and writer. I blog about technology and non-technology topics!
 
 ### Recent posts:
 
