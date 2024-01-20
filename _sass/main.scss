@@ -40,6 +40,7 @@ code {
 .highlight {
   background-color: $clr_bkgd_code;
   color: $clr_code_text;
+  overflow-x: auto;
 }
 
 ol, ul, li, p {
