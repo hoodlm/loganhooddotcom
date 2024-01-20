@@ -29,13 +29,11 @@ body {
   padding: 4%;
   padding-bottom: 0.0rem;
   padding-top: 0.5rem;
-  font-size: 1.20rem;
 }
 
 code {
   font-family: "Courier New", monospace;
-  font-size: 1.00rem;
-  background-color: $clr_bkgd_code;
+  font-size: 0.80rem;
   color: $clr_code_text;
 }
 
@@ -50,17 +48,17 @@ ol, ul, li, p {
 
 h1 {
   color: $clr_h1;
-  font-size: 2.55rem;
+  font-size: 2.00rem;
 }
 
 h2 {
   color: $clr_h2;
-  font-size: 1.90rem;
+  font-size: 1.75rem;
 }
 
 h3 {
   color: $clr_h3;
-  font-size: 1.35rem;
+  font-size: 1.25rem;
 }
 
 nav {
@@ -80,6 +78,7 @@ footer {
 
 .serious-security-business {
   font-family: "Courier New", monospace;
+  font-size: 0.75rem;
   background-color: $clr_bkgd_box;
   color: #2e3436;
   padding: 0.25rem;
