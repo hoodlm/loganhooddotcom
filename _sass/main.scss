@@ -26,8 +26,18 @@ img {
   max-width: 100%;
 }
 
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: $clr_bkgd_box;
+  text-align: left;
+}
+
 th, td {
-  padding: 0.2rem;
+  padding: 0.4rem;
   border: 1px solid $clr_darkborder;
 }
 
