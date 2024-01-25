@@ -2,6 +2,7 @@
 
 $clr_bkgd: #eeeeec;
 $clr_bkgd_code: color.scale($clr_bkgd, $lightness: -15%);
+$clr_bkgd_highlight_slight: #cdf8a4;
 $clr_bkgd_box: #D3D7CF;
 
 $clr_text: #2e3436;
@@ -25,6 +26,11 @@ img {
   max-width: 100%;
 }
 
+th, td {
+  padding: 0.2rem;
+  border: 1px solid $clr_darkborder;
+}
+
 body {
   padding: 4%;
   padding-bottom: 0.0rem;
@@ -39,6 +45,12 @@ code {
 
 .highlight {
   background-color: $clr_bkgd_code;
+  color: $clr_code_text;
+  overflow-x: auto;
+}
+
+.slight-highlight {
+  background-color: $clr_bkgd_highlight_slight;
   color: $clr_code_text;
   overflow-x: auto;
 }
