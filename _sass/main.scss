@@ -15,9 +15,23 @@ $clr_h3: color.scale($clr_h1, $lightness: 40%);
 $clr_lightborder: #babdb6;
 $clr_darkborder: black;
 
+$body-font: Zilla Slab, serif;
+$code-font: Sudo, monospace;
+
+@font-face {
+  font-family: "Sudo";
+  font-weight: normal;
+  font-style: normal;
+
+  src: local("Sudo Light")
+     , url("fonts/Sudo-Light.woff2") format("woff2");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,600;1,400&display=swap');
+
 html {
   background-color: $clr_bkgd;
-  font-family: "Times New Roman", serif;
+  font-family: $body-font;
 }
 
 img {
@@ -43,13 +57,14 @@ th, td {
 
 body {
   padding: 4%;
+  font-size: 1.10rem;
   padding-bottom: 0.0rem;
   padding-top: 0.5rem;
 }
 
 code {
-  font-family: "Courier New", monospace;
-  font-size: 0.80rem;
+  font-family: $code-font;
+  font-size: 1.10rem;
   color: $clr_code_text;
 }
 
@@ -100,8 +115,8 @@ footer {
 }
 
 .serious-security-business {
-  font-family: "Courier New", monospace;
-  font-size: 0.75rem;
+  font-family: $code-font;
+  font-size: 1.00rem;
   background-color: $clr_bkgd_box;
   color: #2e3436;
   padding: 0.25rem;
