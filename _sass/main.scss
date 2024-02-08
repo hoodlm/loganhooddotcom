@@ -8,9 +8,9 @@ $clr_bkgd_box: #D3D7CF;
 $clr_text: #2e3436;
 $clr_code_text: #000000;
 
-$clr_h1: #0F2E7B;
-$clr_h2: color.scale($clr_h1, $lightness: 20%);
-$clr_h3: color.scale($clr_h1, $lightness: 40%);
+$clr_h1: #4e9a06;
+$clr_h2: $clr_h1;
+$clr_h3: color.scale($clr_h1, $saturation: -25%);
 
 $clr_lightborder: #babdb6;
 $clr_darkborder: black;
@@ -86,12 +86,12 @@ ol, ul, li, p {
 
 h1 {
   color: $clr_h1;
-  font-size: 2.00rem;
+  font-size: 2.25rem;
 }
 
 h2 {
   color: $clr_h2;
-  font-size: 1.75rem;
+  font-size: 1.66rem;
 }
 
 h3 {

@@ -7,7 +7,7 @@ title: Logan Hood
 
 Software engineer and writer. I blog about technology and non-technology topics!
 
-### Recent posts:
+## Recent posts
 
 {% for post in site.posts %}
 * **{{ post.date | date: "%Y-%m-%d" }}**: [{{ post.title }}]({{ post.url }}){% endfor %}
