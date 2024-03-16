@@ -9,8 +9,9 @@ Software engineer and writer. I blog about technology and non-technology topics!
 
 ## Recent posts
 
-{% for post in site.posts %}
+{% for post in site.posts limit:4 %}
 * **{{ post.date | date: "%Y-%m-%d" }}**: [{{ post.title }}]({{ post.url }}){% endfor %}
+* [...and more!](./blog.html)
 
 ## Links
 
