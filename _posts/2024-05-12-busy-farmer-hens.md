@@ -20,6 +20,7 @@ The next day, he feeds the chickens as normal - but with half as much feed - sat
 The farmer has a simple system: he provides an input of chicken feed, and the hens produce eggs as an output.
 
 ![A system flow diagram, showing 24 hens producing 24 eggs a day]({{ page.imgpath }}/24eggs.png)
+{: class="imgbox"}
 
 He observes that the system has started to become less efficient - he is providing the same input but getting only 50% of the output. He gathered some information about the inner workings of the system by watching his hens for a day, but ultimately took the wrong action because of an incorrect understanding of how a key component of his system - the flock of hens - degrades over time.
 
@@ -31,6 +32,7 @@ The farmer's model is that hens can function in two modes:
 ...and that the system had degraded because half of his hens had become unproductive, while the other half are still fully productive. To improve the efficiency of the system, he just needs to figure out which hens are unproductive and remove them.
 
 ![Same diagram as above. 12 chickens are grayed out, and the output is 12 eggs a day.]({{ page.imgpath }}/12eggswrong.png)
+{: class="imgbox"}
 
 In fact, the system's actual behavior is:
 
@@ -39,8 +41,10 @@ In fact, the system's actual behavior is:
 For young healthy hens, the frequency is daily. But, egg-laying gradually slows down as hens age. The farmer did not realize is that *every* hen in the flock was running at half-productivity! So, removing half of the chickens from his flock did not improve the efficiency of the system, but only reduced his egg production by another 50%.
 
 ![All 24 chickens are grayed out, "each chicken lays an egg every 2 days".]({{ page.imgpath }}/12eggs2.png)
+{: class="imgbox"}
 
 ![The same diagram as above, but 12 chickens are crossed out to indicate they've been butchered. Output: 6 eggs/day]({{ page.imgpath }}/6eggs.png)
+{: class="imgbox"}
 
 ---
 

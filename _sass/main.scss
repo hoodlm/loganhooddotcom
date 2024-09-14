@@ -35,6 +35,14 @@ html {
 }
 
 img {
+  max-width: 100%;
+}
+
+.music-notation {
+  border: 0.125rem solid black;
+}
+
+.imgbox {
   padding: 0.5rem;
   border: 0.125rem solid $clr_lightborder;
   max-width: 100%;

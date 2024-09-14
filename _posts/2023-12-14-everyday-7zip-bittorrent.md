@@ -77,6 +77,7 @@ If you've installed 7-Zip, you should be able to right-click on the folder and h
 option to compress as a 7z file. Here's what this looks like in Linux Mint, for example:
 
 ![Right click on PinkWojaks folder, mouse-over the Compress option in the drop-down menu]({{ page.imgpath }}/right-click-compress.png)
+{: class="imgbox"}
 
 Choose **7z** as the file format and use a strong password.
 You need to write down the password somewhere, because you'll have to share it with your recipients.
@@ -84,6 +85,7 @@ Optionally, you can change the filename (like I've done here) if you want to hid
 original folder name.
 
 ![Dialog to compress the directory. Filename: burly-duckbill-aviation, Password: "GMsDvFPibiwCRpnTxTgKyRi", check "Encrypt the file list too"]({{ page.imgpath }}/compress-dialog.png)
+{: class="imgbox"}
 
 ### (2) Create a .torrent file
 
@@ -93,6 +95,7 @@ Choose your 7z file, "Start seeding immediately", and
 add a tracker URL. In this case I'm using `udp://tracker.opentrackr.org:1337/announce`
 
 ![qBittorrent user interface, with the 7z file selected as the file path, 'start seeding immediately' checked, private torrent NOT checked, and tracker URLs populated with a tracker announcement URL.]({{ page.imgpath }}/create-torrent-dialog.png)
+{: class="imgbox"}
 
 Take note that I did not check the 'Private Torrent' option - because we **do** want
 to enable the "DHT network" so that recipients can auto-discover your IP address.
@@ -130,10 +133,12 @@ Your recipients should be able to open the torrent and download the 7z file. Whe
 archive, they'll be prompted to enter the password you shared with them.
 
 ![password required dialog window]({{ page.imgpath }}/password-required.png)
+{: class="imgbox"}
 
 And then the files are there!
 
 ![various pink wojaks in an extracted folder]({{ page.imgpath }}/mission-accomplished.jpg)
+{: class="imgbox"}
 
 You have to leave qBittorrent running on your computer to seed so that
 everyone can download it from you. You'll see your recipients
