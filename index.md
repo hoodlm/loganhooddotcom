@@ -22,8 +22,6 @@ Software engineer and writer. I blog about technology and non-technology topics!
 
 ### Software
 
-Source code available!
-
 * [This website](./about.html) is a basic static site created with Jekyll.
 * [u](https://github.com/hoodlm/u/tree/main) is an experimental esoteric programming language based around unary operators.
 * [my JunkDrawer](https://github.com/hoodlm/JunkDrawer) is a personal monorepo of experimental code and other misfit toys.
