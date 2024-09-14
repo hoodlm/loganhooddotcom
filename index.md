@@ -13,8 +13,6 @@ Software engineer and writer. I blog about technology and non-technology topics!
 **{{ post.date | date: "%Y-%m-%d" }}**: [{{ post.title }}]({{ post.url }})<br/>{% endfor %}
 [...and more!](./blog.html)
 
-{% include rss.html %}
-
 ## Links
 
 [GitHub](https://github.com/hoodlm)<br/>
