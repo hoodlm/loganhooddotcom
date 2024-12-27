@@ -1,5 +1,6 @@
 exclude:
 - README.md
+- DEV.md
 
 title: "Logan Hood"
 description: "Personal website and technology blog"
