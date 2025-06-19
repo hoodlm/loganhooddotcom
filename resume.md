@@ -5,20 +5,32 @@ title: Resume - Logan Hood
 
 # Logan Hood - Software Development Engineer
 
-I'm at my best as a hands-on-keyboard technical leader and teacher, working in and across an organization to
-drive engineering excellence. To me, effective software engineering leadership comes down to helping software teams
-do the right things, at the right time, in the right way.
+I am currently professionally and financially satisfied working as a Principal Engineer at AWS, but I am open to new opportunities.
+I strongly prefer fully-remote positions, but I'm willing to consider hybrid positions in the Charlotte, NC metro area.
+
+Two (broad) areas I'm interested in for the future:
+
+1. Security; not compliance box-checking and rent-seeking, but meaningful improvements that provides privacy and safety for real people.
+2. Efficiency; getting more done with fewer kilowatts and less e-waste.
 
 ## Professional Experience
 
-### 2014-Present - SDE at AWS
-
-**Senior Software Development Engineer**, *Amazon Web Services*, Herndon VA
+### 2014-Present - SDE at Amazon Web Services
 
 I designed and built systems, wrote software, and provided operational support for various EC2 products, including
-VPC, Outposts, and Local Zones. More detail on specific projects available by request.
+VPC, Outposts, and Local Zones.
 
-### 2013 - SDE Intern on Amazon GameCircle
+Most recently I've worked on 
+[second-generation AWS Outpost Racks](https://aws.amazon.com/blogs/aws/announcing-second-generation-aws-outposts-racks-with-breakthrough-performance-and-scalability-on-premises/)
+and on improvements to AWS Local Zones.
+
+Title/promo history:
+
+* Software Engineer (2014-2018)
+* Senior Software Engineer (2018-2025)
+* Principal Engineer (current)
+
+### 2013 - SDE Intern - Amazon GameCircle
 
 GameCircle was a platform for Amazon Kindle third-party game developers. I built a
 a web portal for developers to bulk-import leaderboard and achievement data from other mobile gaming
@@ -26,14 +38,13 @@ platforms.
 
 ## Skills
 
-### Software development
+My primary languages are **Rust**, **Kotlin**, **Java**, and **Ruby**, with some work
+in Bash, Python, C#, Typescript, and SQL.
 
-My primary languages are **Kotlin**, **Java**, **Ruby**, and **Bash**, with some work in Rust,
-Python, C#, Typescript, and SQL.
+I am experienced with leading complex, multi-team software projects through the software development lifecycle,
+from design to launch to deprecation.
 
-### Distributed concurrent systems
-
-Extensive experience designing, implementing, and operating large-scale distributed backend systems - request/reply
+I particularly have expertise in designing, implementing, and operating large-scale distributed backend systems - request/reply
 services, data distribution systems, and software-defined networking appliances.
 
 ## Education
