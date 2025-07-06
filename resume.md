@@ -5,7 +5,8 @@ title: Resume - Logan Hood
 
 # Logan Hood - Software Development Engineer
 
-I am currently professionally and financially satisfied working as a Principal Engineer at AWS, but I am open to new opportunities.
+I am currently professionally and financially satisfied working as a Principal Software Engineer at Amazon Web Services (AWS),
+but I am open to new opportunities.
 I strongly prefer fully-remote positions, but I'm willing to consider hybrid positions in the Charlotte, NC metro area.
 
 Two (broad) areas I'm interested in for the future:
@@ -17,7 +18,7 @@ Two (broad) areas I'm interested in for the future:
 
 ### 2014-Present - SDE at Amazon Web Services
 
-I designed and built systems, wrote software, and provided operational support for various EC2 products, including
+I designed and built systems, wrote software, and provided operational support for various EC2 and AWS products, including
 VPC, Outposts, and Local Zones.
 
 Most recently I've worked on 
@@ -26,8 +27,8 @@ and on improvements to AWS Local Zones.
 
 Title/promo history:
 
-* Software Engineer (2014-2018)
-* Senior Software Engineer (2018-2025)
+* Software Engineer (2014-2019)
+* Senior Software Engineer (2019-2025)
 * Principal Engineer (current)
 
 ### 2013 - SDE Intern - Amazon GameCircle
