@@ -9,11 +9,6 @@ I am currently professionally and financially satisfied working as a Principal S
 but I am open to new opportunities.
 I strongly prefer fully-remote positions, but I'm willing to consider hybrid positions in the Charlotte, NC metro area.
 
-Two (broad) areas I'm interested in for the future:
-
-1. Security; not compliance box-checking and rent-seeking, but meaningful improvements that provides privacy and safety for real people.
-2. Efficiency; getting more done with fewer kilowatts and less e-waste.
-
 ## Professional Experience
 
 ### 2014-Present - SDE at Amazon Web Services
